@@ -41,5 +41,5 @@ Route::middleware([
     Route::post('/books', [BookController::class, 'store'])->name('books-store');
     Route::get('/books/{id}/edit', [BookController::class, 'edit'])->name('books-edit');
     Route::put('/books/{id}', [BookController::class, 'update'])->name('books-update');
-    Route::delete('/books/{id}', [BookController::class, 'destroy'])->name('books-update');
+    Route::delete('/books/{id}', [BookController::class, 'destroy'])->name('books-delete');
 });
